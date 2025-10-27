@@ -1,144 +1,161 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Mio Blog</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #fafafa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #f8f9fa;
-      padding: 1.5rem 2rem;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header div {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #555;
-    }
-
-    nav a:hover {
-      color: #000;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-      padding: 0 2rem;
-    }
-
-    article {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    article h2 {
-      margin-top: 0;
-    }
-
-    aside {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background-color: #f8f9fa;
-      text-align: center;
-      padding: 1rem;
-      border-top: 1px solid #ddd;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 768px) {
-      main {
-        grid-template-columns: 1fr;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
-  </style>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 </head>
 <body>
 
-  <header>
-    <div>
-      <h1>Il Mio Blog</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#articoli">Articoli</a></li>
-          <li><a href="#about">Chi sono</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
-      </nav>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-yellow w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Pistacchio<br>42</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-yellow w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-yellow w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Io.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-yellow"><b>Alcune delle mie opere</b></h1>
+    <hr style="width:50px;border:5px solid yellow" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="./images/VoidBoxViewport.jpg" style="width:100%" onclick="onClick(this)" alt="A render of a box">
+      <img src="./images/Texture500.png" style="width:100%" onclick="onClick(this)" alt="Texture for a low poly yellow Cinquecento">
+      <img src="./images/TestMinecraft.jpg" style="width:100%" onclick="onClick(this)" alt="A snippet of a Mineraft Build">
     </div>
-  </header>
 
-  <main>
-    <article>
-      <h2>Titolo del primo articolo</h2>
-      <p>
-        Benvenuto nel mio blog! Qui condivido pensieri, idee e storie che mi ispirano ogni giorno.
-      </p>
-      <p>
-        Questo è un esempio di paragrafo introduttivo. Puoi aggiungere immagini, citazioni o link ad altri articoli.
-      </p>
-    </article>
+    <div class="w3-half">
+      <img src="./images/Senza titolo.jpg" style="width:100%" onclick="onClick(this)" alt="Cinquecento for race">
+      <img src="./images/MinecraftHotel.jpg" style="width:100%" onclick="onClick(this)" alt="The whole of a Mineraft Build">
+      <img src="./images/icona.png" style="width:100%" onclick="onClick(this)" alt="P42 in bold letters">
+    </div>
+  </div>
 
-    <aside>
-      <h3>Chi sono</h3>
-      <p>Ciao! Mi chiamo Pistacchio e odio la tecnologia e vita quotidiana.</p>
-      <h3>Articoli recenti</h3>
-      <ul>
-        <li><a href="#">Come ho iniziato a scrivere</a></li>
-        <li><a href="#">Le mie letture preferite</a></li>
-        <li><a href="#">Cosa sto imparando ora</a></li>
-      </ul>
-    </aside>
-  </main>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 
-  <footer>
-    <p>© 2025 Il Mio Blog — Tutti i diritti riservati.</p>
-  </footer>
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-yellow"><b>Servizi.</b></h1>
+    <hr style="width:50px;border:5px solid yellow" class="w3-round">
+    <p>Sono una singola persona che perde un sacco di tempo in progetti non finiti.</p>
+    <p>Testo di riempimento???
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-yellow"><b>Chi siamo.</b></h1>
+    <hr style="width:50px;border:5px solid yellow" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>I designer del sito e dei prodotti</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./images/Faccia 1.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Stefano</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Il colore giallo mi ricorda tanto i limoni, e a me proprio non piacciono i limoni.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./images/Faccia 2.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Stefano</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Le forme sono la prima fonte di ispirazione per alzarmi la mattina.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="./images/Faccia 3.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Stefano</h3>
+          <p class="w3-opacity">Scultore</p>
+          <p>La pietra fredda non la tocco ormai da anni.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://en.wikipedia.org/wiki/Phallus" title="W3.CSS" target="_blank" class="w3-hover-opacity">stocazzo</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
