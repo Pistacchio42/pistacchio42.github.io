@@ -70,3 +70,10 @@
 .main-hover-text:hover {
     color: #05a8aaff !important
 }
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('LONDO_.woff') format ('woff'),
+        url('LONDO_.ttf') format ('ttf'),
+        url('LONDO_.eot') format ('eot');
+}
