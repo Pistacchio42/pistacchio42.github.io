@@ -1,6 +1,4 @@
-body{
-
-    /* CSS HEX */
+.customColors{    /* CSS HEX */
     --verdigris: #05a8aaff;
     --gunmetal: #2f323aff;
     --light-red: #f97279ff;
@@ -10,19 +8,21 @@ body{
     --gunmetal: hsla(224, 10%, 21%, 1);
     --light-red: hsla(357, 92%, 71%, 1);
 
-    /* SCSS HEX */
+    
+
+    
     /*$verdigris: #05a8aaff;*/
     /*$gunmetal: #2f323aff;*/
     /*$light-red: #f97279ff;*/
-    /* SCSS HSL **/
+    /**/
     /*$verdigris: hsla(181, 94%, 34%, 1);*/
     /*$gunmetal: hsla(224, 10%, 21%, 1);*/
     /*$light-red: hsla(357, 92%, 71%, 1);*/
-    /* SCSS RGB **/
+    /**/
     /*$verdigris: rgba(5, 168, 170, 1);*/
     /*$gunmetal: rgba(47, 50, 58, 1);*/
     /*$light-red: rgba(249, 114, 121, 1);*/
-    /* SCSS Gradient **/
+    /**/
     /*$gradient-top: linear-gradient(0deg, #05a8aaff, #2f323aff, #f97279ff);*/
     /*$gradient-right: linear-gradient(90deg, #05a8aaff, #2f323aff, #f97279ff);*/
     /*$gradient-bottom: linear-gradient(180deg, #05a8aaff, #2f323aff, #f97279ff);*/
@@ -32,5 +32,41 @@ body{
     /*$gradient-top-left: linear-gradient(225deg, #05a8aaff, #2f323aff, #f97279ff);*/
     /*$gradient-bottom-left: linear-gradient(315deg, #05a8aaff, #2f323aff, #f97279ff);*/
     /*$gradient-radial: radial-gradient(#05a8aaff, #2f323aff, #f97279ff);*/
+}
 
+.main,
+.main-hover:hover {
+    color: rgb(37, 87, 87) !important;
+    background-color: #05a8aaff !important
+}
+.secondary,
+.secondary-hover:hover {
+    color: rgb(107, 113, 131) !important;
+    background-color: #2f323aff !important
+}
+.accent,
+.accent-hover:hover {
+    color: rgb(99, 45, 47)(107, 113, 131) !important;
+    background-color: #f97279ff !important
+}
+
+.main-color,
+.main-color-hover:hover {
+    color: #05a8aaff !important;
+}
+
+.secondary-color,
+.secondary-color-hover:hover {
+    color: #2f323aff !important;
+}
+
+.accent-color,
+.accent-color-hover:hover {
+    color: #f97279ff !important;
+}
+
+
+.main-text,
+.main-hover-text:hover {
+    color: #05a8aaff !important
 }

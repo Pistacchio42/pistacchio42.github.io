@@ -18,22 +18,22 @@
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-cyan w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar main w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Pistacchio<br>42</b></h3>
+    <h3 class="w3-padding-64 "><img src="./src/black_logo.svg" style="width:75%">
   </div>
   <div class="w3-bar-block">
-    <a href="#opere" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Disegno</a>
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Cosa facciamo</a> 
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Il Team</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-orange">Contatti</a>
+    <a href="#opere" onclick="w3_close()" class="w3-bar-item w3-button accent-hover">Disegno</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button accent-hover">Cosa facciamo</a> 
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button accent-hover">Il Team</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button accent-hover">Contatti</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large main w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button main w3-margin-right" onclick="w3_open()">☰</a>
   <span>P42</span>
 </header>
 
@@ -45,8 +45,8 @@
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Pistacchio Corporation.</b></h1>
-    <h1 class="w3-xxxlarge w3-text-cyan"><b>Un nuovo modo di scoprire il Mondo.</b></h1>
+    <h1 class="w3-jumbo secondary-color"><b>Pistacchio Corporation.</b></h1>
+    <h1 class="w3-xxxlarge main-text"><b>Un nuovo modo di scoprire il Mondo.</b></h1>
     <hr style="width:420px;border:5px solid rgb(28, 170, 151)" class="w3-round">
   </div>
   
@@ -66,8 +66,8 @@
   </div>
 
   <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+  <div id="modal01" class="w3-modal secondary" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button secondary w3-xxlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption"></p>
@@ -76,7 +76,7 @@
 
   <!-- Services -->
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-cyan"><b>Servizi.</b></h1>
+    <h1 class="w3-xxxlarge main-text"><b>Servizi.</b></h1>
     <hr style="width:420px;border:5px solid rgb(28, 170, 151)" class="w3-round">
     <p>Sono una singola famiglia che perde un sacco di tempo in progetti perfetti non finiti.</p>
     <p>Siamo una piccola realtà composta da 8 persone unite dalla passione per il fare bene ad un prezzo conveniente. La nostra azienda nasce con un obiettivo semplice: creare tutto ciò di cui puoi avere bisogno, con cura, qualità e attenzione ai dettagli.</br>
@@ -88,7 +88,7 @@
   
   <!-- Designers -->
   <div class="w3-container" id="team" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-cyan"><b>Chi siamo.</b></h1>
+    <h1 class="w3-xxxlarge main-text"><b>Chi siamo.</b></h1>
     <hr style="width:420px;border:5px solid rgb(28, 170, 151)" class="w3-round">
     <p>Il Team migliore da questa parte del pacifico.</p>
     <p>Siamo otto. Tutti Stefano.</br>
@@ -168,6 +168,11 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+function switchLogo(){
+
+}
+
 </script>
 
 </body>
