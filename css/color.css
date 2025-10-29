@@ -2,6 +2,7 @@
     --verdigris: #05a8aaff;
     --gunmetal: #2f323aff;
     --light-red: #f97279ff;
+    --prugna-purple: #282431ff;
 
     /* CSS HSL */
     --verdigris: hsla(181, 94%, 34%, 1);
@@ -44,6 +45,13 @@
     color: rgb(107, 113, 131) !important;
     background-color: #2f323aff !important
 }
+
+.tertiary,
+.tertiary-hover:hover {
+    color: rgb(63, 69, 85);
+    background-color: #282431 !important
+}
+
 .accent,
 .accent-hover:hover {
     color: rgb(99, 45, 47)(107, 113, 131) !important;
@@ -58,6 +66,11 @@
 .secondary-color,
 .secondary-color-hover:hover {
     color: #2f323aff !important;
+}
+
+.tertiary-color
+.tertiary-color-hover:hover {
+    color: #282431 !important;
 }
 
 .accent-color,
