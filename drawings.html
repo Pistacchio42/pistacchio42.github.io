@@ -1,54 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/drawings.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./font/stylesheet.css">
+  <link rel="stylesheet" href="./css/color.css">
+<style>
+  h1,h2,h3,h4,h5 {font-family: "London", sans-serif}
+  body {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
 </head>
 <body>
 
-<div class="header">
-  <h2>Blog Name</h2>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey main-hover">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey main-hover">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey main-hover">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey main-hover">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge accent main-hover w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1 class="accent-color"><b>Cose che ho fatto</b></h1>
+  <p class="accent"><b>Questa è una lista di roba che ho fatto negli anni.</b></p>
+  <p class="w3-padding-16 "><button class="w3-button main" onclick="myFunction()">Aggiungi spazio tra le foto</button></p>
+</header>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="./ConCon/Panino.jpg" style="width:100%">
+    <img src="./ConCon/PetaPetaPurin.jpg" style="width:100%">
+    <img src="./ConCon/Snoo-Stand.jpg" style="width:100%">
+    <img src="./ConCon/Sonny-Reference.jpg" style="width:100%">
+    <img src="./ConCon/Void-Box-01.jpg" style="width:100%">
+    <img src="./ConCon/Void-Box-02.jpg" style="width:100%">
+    <img src="./ConCon/Void-Box-03.jpg" style="width:100%">
   </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
+
+  <div class="w3-third">
+    <img src="./ConCon/Chrom.jpg" style="width:100%">
+    <img src="./ConCon/Cinghiale.jpg" style="width:100%">
+    <img src="./ConCon/DeathTattoo.jpg" style="width:100%">
+    <img src="./ConCon/Minecraft-Hotel-02.jpg" style="width:100%">
+    <img src="./ConCon/King-Frog-Smoking.jpg" style="width:100%">
+    <img src="./ConCon/Jhonny.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="./ConCon/Lamia-Ras-2.jpg" style="width:100%">
+    <img src="./ConCon/Lamia.jpg" style="width:100%">
+    <img src="./ConCon/Minecraft-Hotel-01.jpg" style="width:100%">
+    <img src="./ConCon/Minecraft-Hotel-03.jpg" style="width:100%">
+    <img src="./ConCon/Minecraft-Hotel-05.jpg" style="width:100%">
+    <img src="./ConCon/Lamia-Ras-1.jpg" style="width:100%">
   </div>
 </div>
 
-<div class="footer">
-  <h2>Footer</h2>
+<!-- End Page Content -->
 </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 main w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+  <i class="fa fa-instagram accent-color-hover"></i>
+  <i class="fa fa-pinterest-p accent-color-hover"></i>
+  <i class="fa fa-twitter accent-color-hover"></i>
+  <i class="fa fa-reddit accent-color-hover"></i>
+  <i class="fa fa-deviantart accent-color-hover"></i>
+  <i class="fa fa-tumblr accent-color-hover"></i>
+  <p class="w3-medium">Powered by <a href="https://it.wikipedia.org/wiki/Giano" target="_blank" class="w3-hover-text-green">Stefano</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
