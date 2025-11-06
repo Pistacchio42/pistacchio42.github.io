@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('LONDO_.woff') format ('woff'),
+        url('LONDO_.ttf') format ('ttf'),
+        url('LONDO_.eot') format ('eot');
+}
+
+/* Header/Blog Title */
+.header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.remove-on-hover:hover {
+  outline: none !important;
+  border: none;
+}
+.remove-on-hover::before,
+.remove-on-hover::after {
+  content: none !important;
+  border: none !important;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.spacer{    
+   padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+img {margin-bottom: -7px}
+
+.w3-row-padding img {margin-bottom: 12px}

@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./font/stylesheet.css">
 <link rel="stylesheet" href="./css/color.css">
+<link rel="stylesheet" href="./css/forms.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <style>
     h1,h2,h3,h4,h5 {font-family: "London", sans-serif}
     body {font-family: "Poppins", sans-serif}
@@ -16,21 +18,35 @@
 
 <div class="header main">
   <img class="spacer" src="./src/logo/purple_logo.svg" width=130">
-  <h2 class="spacer remove-on-hover secondary-color-hover">Blog42</h2>
+  <h2 class="spacer remove-on-hover secondary-color-hover header" font-size="42">Blog42</h2>
+</div>
+
+<div id="modal01" class="w3-modal tertiary" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button tertiary w3-xxlarge w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card tertiary-color">
-      <h1>Sto montando Sailor-Gunpla</h1>
-      <h2>Dopo un recente acquisto a <a href="https://www.luccacomicsandgames.com/">Lucca Comics</a> mi sono trovato a montare un Gunpla inaspettato, 5 Nov 2025</h2>
-      <div class="fakeimg accent" style="height:200px;">Image</div>
+      <h2>Sto montando Sailor-Gunpla</h2>
+      <h3>Dopo un recente acquisto a <a href="https://www.luccacomicsandgames.com/">Lucca Comics</a> mi sono trovato a montare un Gunpla inaspettato, 5 Nov 2025</h3>
+      <div class="fakeimg accent" style="height:200px;">
+        <img src="./src/gundams/gf13-instructions.jpg" onclick="onClick(this)">
+        <img src="./src/gundams/gf13-no-bow.jpg" onclick="onClick(this)">
+        <img src="./src/gundams/gf13-torso.jpg" onclick="onClick(this)">
+        <img src="./src/gundams/gf13-torso-head.jpg" onclick="onClick(this)">
+        <img src="./src/gundams/gf13-torso-head-detail.jpg" onclick="onClick(this)">
+    </div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
     <div class="card tertiary-color">
-      <h1>TITLE HEADING</h1>
-      <h2>Title description, Sep 2, 2017</h2>
+      <h2>TITLE HEADING</h2>
+      <h3>Title description, Sep 2, 2017</h3>
       <div class="fakeimg accent" style="height:200px;">Image</div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -52,8 +68,19 @@
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Foot</h2>
 </div>
 
+
+
+<script>
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+</script>
 </body>
 </html>
+
