@@ -20,7 +20,8 @@
 
 <div class="header main">
   <img class="spacer" src="./src/logo/purple_logo.svg" width=130">
-  <h2 class="spacer remove-on-hover secondary-color-hover header" font-size="42">Blog42</h2>
+  <FuzzyText baseIntensity={0.2} hoverIntensity={hoverIntensity} enableHover={enableHover}><h2 class="spacer remove-on-hover secondary-color-hover header" font-size="42">Blog42</h2></FuzzyText>
+  
 </div>
 
 <div id="modal01" class="w3-modal tertiary" style="padding-top:0" onclick="this.style.display='none'">
@@ -46,7 +47,7 @@
       <p>
         Questo è uno dei pezzi che verranno aggiunti alla collezione. L'ho preso perchè mi sembrava molto molto divertente.
         Le foto qui sopra sono di ieri sera, appena sono arrivato a casa (siamo andati a mangiare al burgy) mi sono messo a costruirlo con un film e del vino.
-        Sto iniziando a utilizzare anche i colori per accentuare i dettagli, spero di starlo facendo bene...
+        Sto iniziando a utilizzare anche i colori per accentuare i dettavgli, spero di starlo facendo bene...
         Queste sono solo le foto di ieri sera ma man mano che vado avanti proverò a tenere aggiornato il blog.
       </p>
       <h5>Come lo feci</h5>
@@ -71,6 +72,25 @@
       </p>
       <p>
         Non ho avuto molto tempo per montare niente perchè il giovedì frequento un corso di teatro e sono tornato a casa tardissimo. Doccina e poi ho continuato a montare il modellino con Franci accanto. <\3
+      </p>
+      <h5>Giorno 3</h5>
+      <div class="blog-image-expo accent">
+        <img class="blog-images" src="./src/gundams/gf13-shoulder.jpg" onclick="enlarge(this)">
+        <img class="blog-images" src="./src/gundams/gf13-arm.jpg" onclick="enlarge(this)">
+        <img class="blog-images" src="./src/gundams/gf13-hand-alt.jpg" onclick="enlarge(this)">
+        <img class="blog-images" src="./src/gundams/gf13-franci-hand.jpg" onclick="enlarge(this)">
+        <img class="blog-images" src="./src/gundams/gf13-hand.jpg" onclick="enlarge(this)">
+        <img class="blog-images" src="./src/gundams/gf13-torso-head-arms.jpg" onclick="enlarge(this)">
+      </div>
+      <p>
+        Weekend pieno, sono riuscito però a completare le braccia, con dettagli, mani e colori.
+      </p>
+      <div class="blog-image-expo accent">
+        <img class="blog-images" src="./src/gundams/gf13-torso-head-arms-pose.jpg" onclick="enlarge(this)">
+        <img class="blog-images" src="./src/gundams/gf13-ankles.jpg" onclick="enlarge(this)">
+      </div>
+      <p>
+        Oltre a tutto ciò sono anche riuscito ad iniziare le gambe, qui le foto delle caviglie!
       </p>
     </div>
     <div class="card tertiary-color">
@@ -106,6 +126,7 @@
 
 
 <script>
+    import FuzzyText from './js/FuzzyText';
     function enlarge(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";
