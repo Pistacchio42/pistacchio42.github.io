@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "homepage": "http://Pistacchio42.github.io/pistacchio42.github.io"
+
+  },
+
+  "scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+  }
+
+}
