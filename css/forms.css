@@ -108,12 +108,12 @@
 
 .blog-image-finished {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   overflow-x: auto;      /* Enables horizontal scroll */
   scroll-snap-type: x mandatory; /* Snaps items into place */
   padding: 20px;
   width: 100%;
-  height: 100%;
+  height: 500%;
   scroll-behavior: smooth; /* Smooth scrolling */
 }
 .blog-image-finished img {
@@ -130,6 +130,9 @@
   scrollbar-width: none;     /* Firefox */
 }
 
+.blog-finished{
+    height: 460px;
+}
 
 
 img {margin-bottom: -7px}
