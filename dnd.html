@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D&D42</title>
+  <link rel="icon" type="image/x-icon" href="./src/logo/pink_logo.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./font/stylesheet.css">
+<link rel="stylesheet" href="./css/color.css">
+<link rel="stylesheet" href="./css/forms.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+    h1,h2,h3,h4,h5 {font-family: "London", sans-serif}
+    body {font-family: "Poppins", sans-serif}
+    * {
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header main">
+    <img class="spacer" src="./src/logo/purple_logo.svg" width=130>
+    <FuzzyText baseIntensity={0.2} hoverIntensity={hoverIntensity} enableHover={enableHover}><h2 class="spacer remove-on-hover secondary-color-hover header" font-size="42">Dungeons & Dragons Homebrew Lore</h2></FuzzyText>
+    
+    </div>
+
+
+    <script>
+        function enlarge(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+</body>
+</html>
