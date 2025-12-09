@@ -146,3 +146,65 @@ Source - https://stackoverflow.com/questions/10769016/display-image-on-text-link
 .hover_img a { position:relative; }
 .hover_img a span { position:absolute; display:none; z-index:99; }
 .hover_img a:hover span { display:block; }
+
+
+/* Layout enciclopedico */
+.encyclopedia {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Indice laterale */
+.index-panel {
+  width: 25%;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+/* Contenuto principale */
+.content-panel {
+  width: 75%;
+  padding-left: 30px;
+}
+
+/* Menu a tendina */
+.index-group {
+  margin-bottom: 15px;
+}
+
+.index-group summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+/* Link dell’indice */
+.index-group a {
+  display: block;
+  padding: 4px 0 4px 10px;
+  text-decoration: none;
+}
+
+/* Hover coerente con il tuo stile */
+.index-group a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll fluido */
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 800px) {
+
+  .index-panel {
+    position: relative;
+    width: 100%;
+  }
+
+  .index-group summary {
+    font-size: 1.2em;
+  }
+
+}
