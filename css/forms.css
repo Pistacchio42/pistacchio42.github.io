@@ -217,3 +217,37 @@ html {
 .Wikirightcolumn {
   width: 75% !important;
 }
+
+/* Bottone "Indice" */
+.mobile-index-btn {
+  display: none;
+  margin-left: auto;
+  padding: 8px 14px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+/* Mobile behavior */
+@media screen and (max-width: 800px) {
+
+  .index-panel {
+    display: none;
+    width: 100% !important;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .index-panel.show-index {
+    display: block;
+  }
+
+  .mobile-index-btn {
+    display: block;
+  }
+
+  .content-panel {
+    width: 100% !important;
+  }
+}

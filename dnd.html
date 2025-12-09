@@ -26,6 +26,7 @@
     <FuzzyText baseIntensity="{0.2}" hoverIntensity="{hoverIntensity}" enableHover="{enableHover}">
       <h2 class="spacer remove-on-hover secondary-color-hover header">Dungeons & Dragons Homebrew Lore</h2>
     </FuzzyText>
+    <button class="mobile-index-btn" onclick="toggleIndex()">Indice</button>
   </div>
 
   <!-- LAYOUT ENCICLOPEDICO -->
@@ -75,11 +76,12 @@
             Appena ogni crepa è riempita e sigillata con argilla il banchetto ha inizio. Se volete sapere di più sulle usanze culinarie andate <u href="#CibiNanici">qui</u>.
             </p>
   </div>
-
-</body>
-</html>
-
-    
+    <script>
+    function toggleIndex() {
+    const index = document.querySelector('.index-panel');
+    index.classList.toggle('show-index');
+    }
+    </script>
 
 </body>
 </html>
