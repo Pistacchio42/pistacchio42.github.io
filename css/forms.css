@@ -208,3 +208,12 @@ html {
   }
 
 }
+
+/* Correzione layout enciclopedia */
+.Wikileftcolumn {
+  width: 25% !important;
+}
+
+.Wikirightcolumn {
+  width: 75% !important;
+}
